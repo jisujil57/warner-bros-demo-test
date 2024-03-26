@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
 group = 'org.example'
@@ -9,11 +10,53 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+
+allure {
+    report {
+        version.set("2.25.0")
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 {
+                adapterVersion.set("2.25.0")
+            }
+        }
+    }
 }
 
-test {
-    useJUnitPlatform()
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1'),
+            'org.junit.jupiter:junit-jupiter',
+            'com.github.javafaker:javafaker:1.0.2',
+            'com.codeborne:selenide:7.1.0',
+            'commons-io:commons-io:2.15.0',
+            'com.codeborne:pdf-test:1.5.0',
+            'com.codeborne:xls-test:1.4.3',
+            'com.opencsv:opencsv:5.9',
+            'io.qameta.allure:allure-selenide:2.25.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.2'
+
 }
+
+tasks.withType(Test).configureEach {
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
+//tasks.register('smoke_test', Test) {
+//    useJUnitPlatform {
+//        includeTags("smoke_test")
+//    }
+//}
