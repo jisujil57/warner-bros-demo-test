@@ -32,12 +32,15 @@ public class Attach {
     }
 
     public static void browserConsoleLogs() {
+
         if (!Objects.equals(BROWSER_NAME, "firefox")) {
             attachAsText(
                     "Browser console logs",
                     String.join("\n", Selenide.getWebDriverLogs(BROWSER))
             );
         }
+
+
     }
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")

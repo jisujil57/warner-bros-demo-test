@@ -7,6 +7,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.apache.xmlbeans.SystemProperties;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.util.Map;
 
 import static configurations.Attach.*;
 import static helpers.Constants.BROWSER_NAME;
@@ -36,8 +39,14 @@ public class BaseTest {
     }
 
     private static void configureRemoteExecution() {
-        String selenoidUrl = System.getProperty("selenoidUrl", "https://user1:1234@selenoid.autotests.cloud");
+        String selenoidUrl = System.getProperty("selenoidUrl", "http://212.192.9.163:4444");
         Configuration.remote = selenoidUrl + "/wd/hub";
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true));
+        Configuration.browserCapabilities = capabilities;
     }
 
     private void getAttachments() {
