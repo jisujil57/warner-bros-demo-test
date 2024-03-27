@@ -31,7 +31,7 @@ public class BaseTest {
         Configuration.browser = BROWSER_NAME;
         Configuration.baseUrl = SystemProperties.getProperty("baseUrl", "https://www.warnerbros.com");
         Configuration.browserSize = SystemProperties.getProperty("browserSize", "1920x1080");
-        Configuration.browserVersion = SystemProperties.getProperty("browserVersion", "106.0");
+        Configuration.browserVersion = SystemProperties.getProperty("browserVersion", "122.0");
         Configuration.pageLoadStrategy = "eager";
     }
 
