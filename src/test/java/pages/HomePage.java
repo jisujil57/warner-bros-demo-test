@@ -2,13 +2,16 @@ package pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Step;
+import org.openqa.selenium.Cookie;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byTitle;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class HomePage {
 
@@ -18,6 +21,7 @@ public class HomePage {
     private final SelenideElement searchInput = $(".search-input");
     private final SelenideElement acceptCookiesButton = $("#onetrust-accept-btn-handler");
     private final SelenideElement undefinedSearchResultsText = $("[data-testid='results-container']");
+    private final SelenideElement footerCompanyLink = $("[href='/company']");
 
 
     @Step("Открыть главную страницу")
@@ -52,6 +56,6 @@ public class HomePage {
     }
 
     public void scrollToFooter() {
-        $("[href='/company']").scrollIntoView(true);
+        footerCompanyLink.scrollIntoView(true);
     }
 }
