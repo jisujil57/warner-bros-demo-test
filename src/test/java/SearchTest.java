@@ -20,7 +20,6 @@ public class SearchTest extends BaseTest {
     })
     void successfulSearchTest(String searchTerm, String expectedAboutText) {
         homePage.open();
-        homePage.acceptCookies();
         homePage.searchByTitle(searchTerm);
         homePage.openSearchedCard(searchTerm);
         homePage.checkAbout(expectedAboutText);
@@ -30,7 +29,6 @@ public class SearchTest extends BaseTest {
     @DisplayName("Отсутствие результатов поиска")
     void undefinedSearchResultsTest() {
         homePage.open();
-        homePage.acceptCookies();
         homePage.searchByTitle(faker.address().fullAddress());
         homePage.checkUndefinedErrorMessage();
     }

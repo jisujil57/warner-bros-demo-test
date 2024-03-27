@@ -20,7 +20,6 @@ public class NavigationMenuTest extends BaseTest {
     @DisplayName("Проверка списка элементов в меню")
     void checkNavigationListTest() {
         homePage.open();
-        homePage.acceptCookies();
         homePage.scrollToFooter();
         navigationMenu.openNavigationMenu();
         navigationMenu.checkNavigationList();
@@ -30,16 +29,16 @@ public class NavigationMenuTest extends BaseTest {
     @DisplayName("Закрыть меню")
     void closeHamburgerMenuTest() {
         homePage.open();
-        homePage.acceptCookies();
         navigationMenu.openNavigationMenu();
+        navigationMenu.checkNavigationList();
         navigationMenu.closeNavigationMenu();
+        navigationMenu.checkNavigationListHidden();
     }
 
     @Test
     @DisplayName("Переход в раздел Movies через меню")
     void openMoviesPageTest() {
         homePage.open();
-        homePage.acceptCookies();
         homePage.scrollToFooter();
         navigationMenu.openNavigationMenu();
         navigationMenu.openMoviesPage();

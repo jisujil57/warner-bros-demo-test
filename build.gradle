@@ -38,8 +38,9 @@ dependencies {
             'com.codeborne:xls-test:1.4.3',
             'com.opencsv:opencsv:5.9',
             'io.qameta.allure:allure-selenide:2.25.0'
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.1'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.2'
+    testImplementation 'com.fasterxml.jackson.core:jackson-core:2.13.1'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.16.2'
+    testImplementation 'com.google.guava:guava:32.1.2-jre'
 
 }
 
