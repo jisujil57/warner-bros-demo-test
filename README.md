@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования web-сервиса Warner Bros.
+# Проект по автоматизации тестирования web-сервиса Warner Bros.<img alt="Telegram" height="25" src="readme/icons/wb_icon.png" width="25"/>
 
 Проект по автоматизации тестирования web-сервиса www.warnerbros.com использует современные технологии и инструменты,
 такие как IntelliJ IDEA, Java, Gradle, JUnit 5, Selenide, Selenoid, Allure и Jenkins.  
