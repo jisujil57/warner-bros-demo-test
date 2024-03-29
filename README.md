@@ -5,7 +5,7 @@
 Примеры автоматизированных тест-кейсов включают успешный поиск по ключевому слову, обработку ошибок при отсутствии результатов поиска, проверку наличия списка разделов сайта в бургер меню и другие. Запуск автотестов осуществляется через Gradle с возможностью настройки параметров, а также удалённо через Jenkins с использованием параметров сборки.  
 <br>
 Отчёты Allure предоставляют подробную информацию об общем обзоре, наборах тестов и графиках, обеспечивая прозрачность истории тестирования.</font>
-
+<br>
 
 ## **Содержание:**
 
@@ -14,7 +14,7 @@
 * <a href="#local_build">Запуск автотестов</a>
 * <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
 * <a href="#telegram">Уведомление об упавших тестах в Telegram</a>
-<br><br>
+<br>
 
 
 <a id="tools"></a>
@@ -32,7 +32,7 @@
 <a href="https://www.jenkins.io/"><img src="readme/icons/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="readme/icons/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
-<br><br>
+<br>
 
 
 <a id="cases"></a>
@@ -43,7 +43,7 @@
 - Наличие списка разделов сайта в бургер меню при разрешении 1280x800
 - Закрытие меню при разрешении 1280x800
 - Переход в раздел Movies через меню
-<br><br>
+<br>
 
 
 <a id="local_build"></a>
@@ -77,7 +77,7 @@ gradle clean test
 - `${SELENOID_URL}` - базовый URL контейнера Selenoid  
 
 </details>
-
+<br>
 
 
 <a id="jenkins_build"></a>
@@ -95,7 +95,7 @@ test
 -DbrowserSize=${BROWSER_SIZE}
 -DselenoidUrl=${SELENOID_URL}
 ```
-
+<br>
 
 
 <a id="allure"></a>
@@ -126,6 +126,8 @@ test
   <img title="Allure Graphics" src="readme/images/allure_metrics2.png">
 </p>
 </details>
+<br>
+
 
 ## <a name="Telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a> 
 
