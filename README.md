@@ -7,7 +7,6 @@
 Отчёты Allure предоставляют подробную информацию об общем обзоре, наборах тестов и графиках, обеспечивая прозрачность истории тестирования.</font>
 
 
-
 ## **Содержание:**
 
 * <a href="#tools">Технологии и инструменты</a>
@@ -15,7 +14,7 @@
 * <a href="#local_build">Запуск автотестов</a>
 * <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
 * <a href="#telegram">Уведомление об упавших тестах в Telegram</a>
-
+<br><br>
 
 
 <a id="tools"></a>
@@ -33,7 +32,7 @@
 <a href="https://www.jenkins.io/"><img src="readme/icons/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="readme/icons/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
-
+<br><br>
 
 
 <a id="cases"></a>
@@ -44,7 +43,7 @@
 - Наличие списка разделов сайта в бургер меню при разрешении 1280x800
 - Закрытие меню при разрешении 1280x800
 - Переход в раздел Movies через меню
-
+<br><br>
 
 
 <a id="local_build"></a>
