@@ -1,7 +1,9 @@
-# Проект по автоматизации тестирования web-сервиса www.warnerbros.com
+# Проект по автоматизации тестирования web-сервиса Warner Bros.
 
-<font color="green">Проект по автоматизации тестирования web-сервиса www.warnerbros.com использует современные технологии и инструменты, такие как IntelliJ IDEA, Java, Gradle, JUnit 5, Selenide, Selenoid, Allure и Jenkins.  
+Проект по автоматизации тестирования web-сервиса www.warnerbros.com использует современные технологии и инструменты, такие как IntelliJ IDEA, Java, Gradle, JUnit 5, Selenide, Selenoid, Allure и Jenkins.  
+<br>
 Примеры автоматизированных тест-кейсов включают успешный поиск по ключевому слову, обработку ошибок при отсутствии результатов поиска, проверку наличия списка разделов сайта в бургер меню и другие. Запуск автотестов осуществляется через Gradle с возможностью настройки параметров, а также удалённо через Jenkins с использованием параметров сборки.  
+<br>
 Отчёты Allure предоставляют подробную информацию об общем обзоре, наборах тестов и графиках, обеспечивая прозрачность истории тестирования.</font>
 
 
@@ -12,6 +14,7 @@
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 * <a href="#local_build">Запуск автотестов</a>
 * <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
+* <a href="#telegram">Уведомление об упавших тестах в Telegram</a>
 
 
 
@@ -79,7 +82,7 @@ gradle clean test
 
 
 <a id="jenkins_build"></a>
-## Удалённый запуск через Jenkins (Build with Parameters):**
+## </a> <a name="Allure"></a>Запуск в Jenkins (Build with Parameters): </a> <img alt="Telegram" height="25" src="readme/icons/Jenkins.svg" width="25"/>
 <img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
 
 
@@ -97,7 +100,7 @@ test
 
 
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure report с историей</a>
+## </a> <a name="Allure"></a>Allure report с историей: </a> <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/>
 
 ### Overview
 <details>
@@ -124,4 +127,8 @@ test
   <img title="Allure Graphics" src="readme/images/allure_metrics2.png">
 </p>
 </details>
+
+## <a name="Telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a> 
+
+<img title="Allure Graphics" src="readme/images/telegram_notifications.png">
 
