@@ -4,7 +4,8 @@
 
 * <a href="#tools">Технологии и инструменты</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
-
+* <a href="#runner">Запуск автотестов</a>
+<br>
 
 <a id="stack"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
@@ -21,6 +22,7 @@
 <a href="https://www.jenkins.io/"><img src="readme/icons/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="readme/icons/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
+<br>
 
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
@@ -30,3 +32,26 @@
 - Наличие списка разделов сайта в бургер меню при разрешении 1280x800
 - Закрытие меню при разрешении 1280x800
 - Переход в раздел Movies через меню
+<br>
+
+<a id="runner"></a>
+## Запуск автотестов
+**Локальный запуск:**
+```bash  
+gradle clean test
+```
+
+**Удалённый запуск через Jenkins (Build with Parameters):**
+```bash  
+clean test 
+-Dbrowser=${browser} 
+-DbrowserVersion=${browserVersion} 
+-DbrowserSize=${browserSize} 
+-DbaseUrl=${baseUrl} 
+-DremoteUrl=${remoteUrl}
+```
+**browser** - название браузера  
+**browserVersion** - версия браузера  
+**browserSize** - разрешение браузера  
+**baseUrl** - базовый URL тестируемого сайта  
+**remoteUrl** - базовый URL контейнера Selenoid  
