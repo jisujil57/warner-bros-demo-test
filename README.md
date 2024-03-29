@@ -18,6 +18,9 @@
 * <a href="#local_build">Запуск автотестов</a>
 * <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
 * <a href="#telegram">Уведомление об упавших тестах в Telegram</a>
+* <a href="#testops">Allure TestOps интеграция</a>
+* <a href="#jira">Allure TestOps + Jira интеграция</a>
+* <a href="#video">Пример прогона автотеста в Selenoid</a>
   <br>
 
 <a id="tools"></a>
@@ -139,4 +142,39 @@ test
 ## <a name="Telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
 
 <img title="Allure Graphics" src="readme/images/telegram_notifications.png">
+<br>
+
+
+<a id="testops"></a>
+## <a name="TestOps"></a>Allure TestOps интеграция</a> <img alt="Telegram" height="25" src="readme/icons/Allure2.svg" width="25"/></a>
+<details>
+<summary>Скриншоты</summary>
+
+<p align="left">
+  <img title="Allure Graphics" src="readme/images/testops_metrics1.png">
+  <img title="Allure Graphics" src="readme/images/testops_metrics2.png">
+  <img title="Allure Graphics" src="readme/images/testops_metrics3.png">
+</p>
+</details>
+<br>
+
+
+<a id="jira"></a>
+## <a name="Jira"></a>Allure TestOps + Jira интеграция</a> <img alt="Telegram" height="25" src="readme/icons/Jira.svg" width="25"/></a>
+<details>
+<summary>Скриншот</summary>
+
+<p align="left">
+  <img title="Allure Graphics" src="readme/images/jira_ticket.png">
+</p>
+</details>
+<br>
+
+<a id="video"></a>
+## <a name="Selenoid"></a>Пример прогона автотеста в Selenoid</a> <img alt="Selenoid" height="25" src="readme/icons/Selenoid.svg" width="25"/></a>
+<img title="Allure Graphics" src="readme/images/test_video.gif">
+
+
+
+
 
