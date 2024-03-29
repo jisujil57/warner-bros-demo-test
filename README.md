@@ -4,7 +4,8 @@
 
 * <a href="#tools">Технологии и инструменты</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
-* <a href="#runner">Запуск автотестов</a>
+* <a href="#local_build">Запуск автотестов</a>
+* <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
 
 <a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
@@ -31,14 +32,24 @@
 - Закрытие меню при разрешении 1280x800
 - Переход в раздел Movies через меню
 
-<a id="runner"></a>
+<a id="local_build"></a>
 ## Запуск автотестов
-**Локальный запуск:**
+**Запуск через Gradle:**
+  
 ```bash  
 gradle clean test
 ```
 
-**Удалённый запуск через Jenkins (Build with Parameters):**
+**Запуск через Gradle с кастомными параметрами:**
+
+```bash  
+gradle clean test
+-DbaseUrl=${BASE_URL}
+-Dbrowser=${BROWSER_NAME}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DselenoidUrl=${SELENOID_URL}
+```
 
 <details>
 <summary>Параметры</summary>
@@ -50,6 +61,12 @@ gradle clean test
 - `${SELENOID_URL}` - базовый URL контейнера Selenoid  
 
 </details>
+
+<a id="jenkins_build"></a>
+## Удалённый запуск через Jenkins (Build with Parameters):**
+<img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
+
+
 
 
 ```bash  
@@ -82,7 +99,7 @@ test
 
 ### Graphs
 <details>
-<summary>Скришноты</summary>
+<summary>Скриншоты</summary>
 
 <p align="left">
   <img title="Allure Graphics" src="readme/images/allure_metrics1.png">
