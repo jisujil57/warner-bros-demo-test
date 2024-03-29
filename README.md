@@ -141,7 +141,13 @@ test
 
 ## <a name="Telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
 
+<details>
+<summary>Скриншоты</summary>
+
+<p align="left">
 <img title="Allure Graphics" src="readme/images/telegram_notifications.png">
+</p>
+</details>
 <br>
 
 
