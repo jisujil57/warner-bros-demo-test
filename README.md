@@ -84,9 +84,9 @@ test
 <details>
 <summary>Скришноты</summary>
 
-  <p align="left">  
-<img title="Allure Graphics" src="readme/images/allure_metrics1.png">
-<img title="Allure Graphics" src="readme/images/allure_metrics2.png">  
+<p align="left">
+  <img title="Allure Graphics" src="readme/images/allure_metrics1.png">
+  <img title="Allure Graphics" src="readme/images/allure_metrics2.png">
 </p>
 </details>
 
