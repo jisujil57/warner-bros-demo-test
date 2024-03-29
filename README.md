@@ -9,7 +9,7 @@
 <a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
 
-<p align="left">  
+<p align="center">  
 <a href="https://www.jetbrains.com/idea/"><img src="readme/icons/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
 <a href="https://www.java.com/"><img src="readme/icons/Java.svg" width="50" height="50"  alt="Java"/></a>  
 <a href="https://gradle.org/"><img src="readme/icons/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
@@ -89,3 +89,4 @@ test
 <img title="Allure Graphics" src="readme/images/allure_metrics2.png">  
 </p>
 </details>
+
