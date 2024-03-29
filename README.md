@@ -5,7 +5,6 @@
 * <a href="#tools">Технологии и инструменты</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 * <a href="#runner">Запуск автотестов</a>
-<br>
 
 <a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
@@ -22,7 +21,6 @@
 <a href="https://www.jenkins.io/"><img src="readme/icons/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="readme/icons/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
-<br>
 
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
@@ -32,7 +30,6 @@
 - Наличие списка разделов сайта в бургер меню при разрешении 1280x800
 - Закрытие меню при разрешении 1280x800
 - Переход в раздел Movies через меню
-<br>
 
 <a id="runner"></a>
 ## Запуск автотестов
@@ -43,11 +40,17 @@ gradle clean test
 
 **Удалённый запуск через Jenkins (Build with Parameters):**
 
-${BASE_URL} - базовый URL тестируемого сайта  
-${BROWSER_NAME} - название браузера  
-${BROWSER_VERSION} - версия браузера  
-${BROWSER_SIZE} - разрешение браузера  
-${SELENOID_URL} - базовый URL контейнера Selenoid  
+<details>
+<summary>Параметры</summary>
+
+- `${BASE_URL}` - базовый URL тестируемого сайта  
+- `${BROWSER_NAME}` - название браузера  
+- `${BROWSER_VERSION}` - версия браузера  
+- `${BROWSER_SIZE}` - разрешение браузера  
+- `${SELENOID_URL}` - базовый URL контейнера Selenoid  
+
+</details>
+
 
 ```bash  
 test
@@ -58,3 +61,31 @@ test
 -DselenoidUrl=${SELENOID_URL}
 ```
 
+<a id="allure"></a>
+## <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure report с историей</a>
+
+### Overview
+<details>
+<summary>Скриншот</summary>
+<p align="left">  
+<img title="Allure Overview Dashboard" src="readme/images/allure_overview.png">  
+</p> 
+</details>
+
+### Suites
+<details>
+<summary>Скриншот</summary>
+<p align="left">  
+<img title="Allure Tests" src="readme/images/allure_sutes.png">  
+</p>
+</details>
+
+### Graphs
+<details>
+<summary>Скришноты</summary>
+
+  <p align="left">  
+<img title="Allure Graphics" src="readme/images/allure_metrics1.png">
+<img title="Allure Graphics" src="readme/images/allure_metrics2.png">  
+</p>
+</details>
