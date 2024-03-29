@@ -1,11 +1,19 @@
 # Проект по автоматизации тестирования web-сервиса www.warnerbros.com
 
+<font color="green">Проект по автоматизации тестирования web-сервиса www.warnerbros.com использует современные технологии и инструменты, такие как IntelliJ IDEA, Java, Gradle, JUnit 5, Selenide, Selenoid, Allure и Jenkins.  
+Примеры автоматизированных тест-кейсов включают успешный поиск по ключевому слову, обработку ошибок при отсутствии результатов поиска, проверку наличия списка разделов сайта в бургер меню и другие. Запуск автотестов осуществляется через Gradle с возможностью настройки параметров, а также удалённо через Jenkins с использованием параметров сборки.  
+Отчёты Allure предоставляют подробную информацию об общем обзоре, наборах тестов и графиках, обеспечивая прозрачность истории тестирования.</font>
+
+
+
 ## **Содержание:**
 
 * <a href="#tools">Технологии и инструменты</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 * <a href="#local_build">Запуск автотестов</a>
 * <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
+
+
 
 <a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
@@ -23,6 +31,8 @@
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="readme/icons/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
 
+
+
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
 
@@ -32,6 +42,8 @@
 - Закрытие меню при разрешении 1280x800
 - Переход в раздел Movies через меню
 
+
+
 <a id="local_build"></a>
 ## Запуск автотестов
 **Запуск через Gradle:**
@@ -39,6 +51,8 @@
 ```bash  
 gradle clean test
 ```
+
+
 
 **Запуск через Gradle с кастомными параметрами:**
 
@@ -62,6 +76,8 @@ gradle clean test
 
 </details>
 
+
+
 <a id="jenkins_build"></a>
 ## Удалённый запуск через Jenkins (Build with Parameters):**
 <img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
@@ -77,6 +93,8 @@ test
 -DbrowserSize=${BROWSER_SIZE}
 -DselenoidUrl=${SELENOID_URL}
 ```
+
+
 
 <a id="allure"></a>
 ## <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure report с историей</a>
