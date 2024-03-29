@@ -7,7 +7,7 @@
 * <a href="#runner">Запуск автотестов</a>
 <br>
 
-<a id="stack"></a>
+<a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
 
 <p align="left">  
@@ -42,16 +42,19 @@ gradle clean test
 ```
 
 **Удалённый запуск через Jenkins (Build with Parameters):**
+
+${BASE_URL} - базовый URL тестируемого сайта  
+${BROWSER_NAME} - название браузера  
+${BROWSER_VERSION} - версия браузера  
+${BROWSER_SIZE} - разрешение браузера  
+${SELENOID_URL} - базовый URL контейнера Selenoid  
+
 ```bash  
-clean test 
--Dbrowser=${browser} 
--DbrowserVersion=${browserVersion} 
--DbrowserSize=${browserSize} 
--DbaseUrl=${baseUrl} 
--DremoteUrl=${remoteUrl}
+test
+-DbaseUrl=${BASE_URL}
+-Dbrowser=${BROWSER_NAME}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DselenoidUrl=${SELENOID_URL}
 ```
-**browser** - название браузера  
-**browserVersion** - версия браузера  
-**browserSize** - разрешение браузера  
-**baseUrl** - базовый URL тестируемого сайта  
-**remoteUrl** - базовый URL контейнера Selenoid  
+
