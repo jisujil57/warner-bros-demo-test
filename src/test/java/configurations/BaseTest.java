@@ -20,7 +20,6 @@ import static helpers.Constants.BROWSER_NAME;
 import static pages.HomePage.BASE_URL;
 
 public class BaseTest {
-
     public static Set<Cookie> staticCookies;
 
     @BeforeAll
