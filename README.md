@@ -4,13 +4,13 @@
 
 * <a href="#tools">Технологии и инструменты</a>
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
-* <a href="#runner">Запуск автотестов</a>
-<br>
+* <a href="#local_build">Запуск автотестов</a>
+* <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
 
 <a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
 
-<p align="left">  
+<p align="center">  
 <a href="https://www.jetbrains.com/idea/"><img src="readme/icons/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
 <a href="https://www.java.com/"><img src="readme/icons/Java.svg" width="50" height="50"  alt="Java"/></a>  
 <a href="https://gradle.org/"><img src="readme/icons/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
@@ -22,7 +22,6 @@
 <a href="https://www.jenkins.io/"><img src="readme/icons/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://www.atlassian.com/ru/software/jira/"><img src="readme/icons/Jira.svg" width="50" height="50"  alt="Jira"/></a>  
 </p>
-<br>
 
 <a id="cases"></a>
 ## <a name="Примеры автоматизированных тест-кейсов">**Примеры автоматизированных тест-кейсов:**</a>
@@ -32,22 +31,43 @@
 - Наличие списка разделов сайта в бургер меню при разрешении 1280x800
 - Закрытие меню при разрешении 1280x800
 - Переход в раздел Movies через меню
-<br>
 
-<a id="runner"></a>
+<a id="local_build"></a>
 ## Запуск автотестов
-**Локальный запуск:**
+**Запуск через Gradle:**
+  
 ```bash  
 gradle clean test
 ```
 
-**Удалённый запуск через Jenkins (Build with Parameters):**
+**Запуск через Gradle с кастомными параметрами:**
 
-${BASE_URL} - базовый URL тестируемого сайта  
-${BROWSER_NAME} - название браузера  
-${BROWSER_VERSION} - версия браузера  
-${BROWSER_SIZE} - разрешение браузера  
-${SELENOID_URL} - базовый URL контейнера Selenoid  
+```bash  
+gradle clean test
+-DbaseUrl=${BASE_URL}
+-Dbrowser=${BROWSER_NAME}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-DselenoidUrl=${SELENOID_URL}
+```
+
+<details>
+<summary>Параметры</summary>
+
+- `${BASE_URL}` - базовый URL тестируемого сайта  
+- `${BROWSER_NAME}` - название браузера  
+- `${BROWSER_VERSION}` - версия браузера  
+- `${BROWSER_SIZE}` - разрешение браузера  
+- `${SELENOID_URL}` - базовый URL контейнера Selenoid  
+
+</details>
+
+<a id="jenkins_build"></a>
+## Удалённый запуск через Jenkins (Build with Parameters):**
+<img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
+
+
+
 
 ```bash  
 test
@@ -57,4 +77,33 @@ test
 -DbrowserSize=${BROWSER_SIZE}
 -DselenoidUrl=${SELENOID_URL}
 ```
+
+<a id="allure"></a>
+## <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure report с историей</a>
+
+### Overview
+<details>
+<summary>Скриншот</summary>
+<p align="left">  
+<img title="Allure Overview Dashboard" src="readme/images/allure_overview.png">  
+</p> 
+</details>
+
+### Suites
+<details>
+<summary>Скриншот</summary>
+<p align="left">  
+<img title="Allure Tests" src="readme/images/allure_sutes.png">  
+</p>
+</details>
+
+### Graphs
+<details>
+<summary>Скриншоты</summary>
+
+<p align="left">
+  <img title="Allure Graphics" src="readme/images/allure_metrics1.png">
+  <img title="Allure Graphics" src="readme/images/allure_metrics2.png">
+</p>
+</details>
 
