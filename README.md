@@ -93,15 +93,6 @@ gradle clean test
 
 <img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
 
-```bash  
-test
--DbaseUrl=${BASE_URL}
--Dbrowser=${BROWSER_NAME}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DselenoidUrl=${SELENOID_URL}
-```
-
 <br>
 
 
