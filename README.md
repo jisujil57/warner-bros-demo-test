@@ -17,6 +17,7 @@
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 * <a href="#local_build">Запуск автотестов</a>
 * <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
+* <a href="#allure">Allure report с историей</a>
 * <a href="#telegram">Уведомление об упавших тестах в Telegram</a>
 * <a href="#testops">Allure TestOps интеграция</a>
 * <a href="#jira">Allure TestOps + Jira интеграция</a>
@@ -130,7 +131,7 @@ gradle clean test
 </details>
 <br>
 
-## <a name="Telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
+## <a name="telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
 
 <details>
 <summary>Скриншоты</summary>
