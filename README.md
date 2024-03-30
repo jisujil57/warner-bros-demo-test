@@ -90,7 +90,8 @@ gradle clean test
 
 <a id="jenkins_build"></a>
 
-## </a> <a name="Allure"></a>Запуск в Jenkins (Build with Parameters): </a> <img alt="Telegram" height="25" src="readme/icons/Jenkins.svg" width="25"/>
+## </a> <a name="Jenkins"></a>Запуск в Jenkins (Build with Parameters): </a> <img alt="Telegram" height="25" src="readme/icons/Jenkins.svg" width="25"/>
+
 
 <img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
 
@@ -100,6 +101,7 @@ gradle clean test
 <a id="allure"></a>
 
 ## </a> <a name="Allure"></a>Allure report с историей: </a> <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/>
+**Allure Report** — это гибкий и лёгкий инструмент для создания и просмотра графических отчётов о прохождении тестов. 
 
 ### Overview
 
@@ -132,6 +134,7 @@ gradle clean test
 <br>
 
 ## <a name="telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
+**Allure notifications** - это библиотека, позволяющая выполнять автоматическое оповещение о результатах прохождения автотестов, которое направляется в нужный вам мессенджер
 
 <details>
 <summary>Скриншоты</summary>
