@@ -12,7 +12,9 @@ import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.sessionId;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-import static helpers.Constants.BROWSER_NAME;
+
+import static configurations.BaseTest.BROWSER_NAME;
+import static configurations.BaseTest.SELENOID_URL;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
@@ -32,15 +34,12 @@ public class Attach {
     }
 
     public static void browserConsoleLogs() {
-
         if (!Objects.equals(BROWSER_NAME, "firefox")) {
             attachAsText(
                     "Browser console logs",
                     String.join("\n", Selenide.getWebDriverLogs(BROWSER))
             );
         }
-
-
     }
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
@@ -51,7 +50,7 @@ public class Attach {
     }
 
     public static URL getVideoUrl() {
-        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId() + ".mp4";
+        String videoUrl = SELENOID_URL + "/video/" + sessionId() + ".mp4";
         try {
             return new URL(videoUrl);
         } catch (MalformedURLException e) {

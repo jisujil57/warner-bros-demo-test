@@ -73,6 +73,7 @@ public class HomePage {
         undefinedSearchResultsText.shouldHave(text("NO RESULTS FOUND"));
     }
 
+    @Step("Выполнить скролл до футера")
     public void scrollToFooter() {
         footerCompanyLink.scrollIntoView(true);
     }

@@ -29,6 +29,7 @@ public class NavigationMenuTest extends BaseTest {
     @DisplayName("Закрыть меню")
     void closeHamburgerMenuTest() {
         homePage.open();
+        homePage.scrollToFooter();
         navigationMenu.openNavigationMenu();
         navigationMenu.checkNavigationList();
         navigationMenu.closeNavigationMenu();
