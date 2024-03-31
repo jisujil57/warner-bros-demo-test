@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования web-сервиса Warner Bros.
+# Проект по автоматизации тестирования web-сервиса Warner Bros.   <img alt="Telegram" height="25" src="readme/icons/wb_icon.png" width="25"/>
 
 Проект по автоматизации тестирования web-сервиса www.warnerbros.com использует современные технологии и инструменты,
 такие как IntelliJ IDEA, Java, Gradle, JUnit 5, Selenide, Selenoid, Allure и Jenkins.  
@@ -17,6 +17,7 @@
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
 * <a href="#local_build">Запуск автотестов</a>
 * <a href="#jenkins_build">Параметризированная сборка Jenkins</a>
+* <a href="#allure">Allure report с историей</a>
 * <a href="#telegram">Уведомление об упавших тестах в Telegram</a>
 * <a href="#testops">Allure TestOps интеграция</a>
 * <a href="#jira">Allure TestOps + Jira интеграция</a>
@@ -89,18 +90,10 @@ gradle clean test
 
 <a id="jenkins_build"></a>
 
-## </a> <a name="Allure"></a>Запуск в Jenkins (Build with Parameters): </a> <img alt="Telegram" height="25" src="readme/icons/Jenkins.svg" width="25"/>
+## </a> <a name="Jenkins"></a>Запуск в Jenkins (Build with Parameters): </a> <img alt="Telegram" height="25" src="readme/icons/Jenkins.svg" width="25"/>
+
 
 <img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
-
-```bash  
-test
--DbaseUrl=${BASE_URL}
--Dbrowser=${BROWSER_NAME}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DselenoidUrl=${SELENOID_URL}
-```
 
 <br>
 
@@ -108,6 +101,7 @@ test
 <a id="allure"></a>
 
 ## </a> <a name="Allure"></a>Allure report с историей: </a> <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/>
+**Allure Report** — это гибкий и лёгкий инструмент для создания и просмотра графических отчётов о прохождении тестов. 
 
 ### Overview
 
@@ -139,7 +133,8 @@ test
 </details>
 <br>
 
-## <a name="Telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
+## <a name="telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
+**Allure notifications** - это библиотека, позволяющая выполнять автоматическое оповещение о результатах прохождения автотестов, которое направляется в нужный вам мессенджер
 
 <details>
 <summary>Скриншоты</summary>
