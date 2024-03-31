@@ -1,5 +1,5 @@
 import com.codeborne.selenide.Configuration;
-import components.NavigationMenuComponent;
+import pages.components.NavigationMenuComponent;
 import configurations.BaseTest;
 import org.junit.jupiter.api.*;
 import pages.HomePage;

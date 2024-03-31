@@ -1,4 +1,4 @@
-package components;
+package pages.components;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -14,13 +14,6 @@ public class NavigationMenuComponent {
     private final SelenideElement hamburgerMenu = $("[data-component='hamburger']");
     private final SelenideElement closeHamburgerMenu = $("[data-component='hamburger'][open='']");
     private final SelenideElement moviesLink = $("[data-component='nav-list'] [href='/movies']");
-//    private final SelenideElement gamesAndAppsLink = $("[data-component='nav-list'] [href='/games-and-apps']");
-//    private final SelenideElement brandsLink = $("[data-component='nav-list'] [href='/brands']");
-//    private final SelenideElement collectionsLink = $("[data-component='nav-list'] [href='/collections']");
-//    private final SelenideElement pressReleasesLink = $("[data-component='nav-list'] [href='/news/press-releases']");
-//    private final SelenideElement experienceLink = $("[data-component='nav-list'] [href='/experience']");
-//    private final SelenideElement shopLink = $("[data-component='nav-list'] [href='/shop']");
-
     private final ElementsCollection brandsLinks = $$("[data-component='nav-list'] li");
 
     @Step("Открыть меню навигации")
