@@ -42,6 +42,18 @@
 </p>
 <br>
 
+- [IDEA](https://www.jetbrains.com/idea/): Интегрированная среда разработки для Java.
+- [Java](https://www.java.com/): Язык программирования, используемый для разработки приложения.
+- [Gradle](https://gradle.org/): Инструмент сборки проекта.
+- [JUnit 5](https://junit.org/junit5/): Фреймворк для тестирования Java-приложений.
+- [Selenide](https://selenide.org/): Фреймворк для автоматизации тестирования веб-приложений на основе Selenium WebDriver.
+- [Selenoid](https://aerokube.com/selenoid/): Контейнеризированный инструмент для запуска браузерных тестов.
+- [Allure](https://github.com/allure-framework/allure2): Фреймворк для создания отчетов о результатах тестирования.
+- [Allure TestOps](https://qameta.io/): Платформа для управления тестированием на основе Allure.
+- [Jenkins](https://www.jenkins.io/): Сервер непрерывной интеграции для автоматизации сборки, тестирования и развертывания программного обеспечения.
+- [Jira](https://www.atlassian.com/ru/software/jira/): Инструмент управления проектами и задачами.
+<br>
+
 
 <a id="cases"></a>
 
