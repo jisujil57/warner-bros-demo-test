@@ -103,6 +103,7 @@ gradle clean test
 <a id="jenkins_build"></a>
 
 ## </a> <a name="Jenkins"></a>Запуск в Jenkins (Build with Parameters): </a> <img alt="Telegram" height="25" src="readme/icons/Jenkins.svg" width="25"/>
+[Пример job в Jenkins](https://jenkins.autotests.cloud/job/C25-Jisujil57-Run_test_with_allure_notifications_unit14/)
 
 
 <img title="Allure Overview Dashboard" src="readme/images/jenkins_parametr.png"> 
@@ -113,7 +114,9 @@ gradle clean test
 <a id="allure"></a>
 
 ## </a> <a name="Allure"></a>Allure report с историей: </a> <img alt="Allure" height="25" src="readme/icons/Allure.svg" width="25"/>
-**Allure Report** — это гибкий и лёгкий инструмент для создания и просмотра графических отчётов о прохождении тестов. 
+**Allure Report** — это гибкий и лёгкий инструмент для создания и просмотра графических отчётов о прохождении тестов.  
+
+[Пример Allure-отчета](https://jenkins.autotests.cloud/job/C25-Jisujil57-Run_test_with_allure_notifications_unit14/allure)
 
 ### Overview
 
@@ -146,7 +149,9 @@ gradle clean test
 <br>
 
 ## <a name="telegram"></a>Уведомление об упавших тестах в Telegram</a> <img alt="Telegram" height="25" src="readme/icons/Telegram.svg" width="25"/></a>
-**Allure notifications** - это библиотека, позволяющая выполнять автоматическое оповещение о результатах прохождения автотестов, которое направляется в нужный вам мессенджер
+**Allure notifications** - это библиотека, позволяющая выполнять автоматическое оповещение о результатах прохождения автотестов, которое направляется в нужный вам мессенджер  
+
+[Пример уведомления в Telegram](https://t.me/c/2139547211/7)
 
 <details>
 <summary>Скриншоты</summary>
@@ -159,7 +164,12 @@ gradle clean test
 
 
 <a id="testops"></a>
-## <a name="TestOps"></a>Allure TestOps интеграция</a> <img alt="Telegram" height="25" src="readme/icons/Allure2.svg" width="25"/></a>
+## <a name="TestOps"></a>Allure TestOps интеграция</a> <img alt="Allure TestOps" height="25" src="readme/icons/Allure2.svg" width="25"/></a>  
+
+[Метрики в Allure TestOps](https://allure.autotests.cloud/project/4153/dashboards)  
+
+[Тест-кейсы в Allure TestOps](https://allure.autotests.cloud/project/4153/test-cases/31371?search=W3siaWQiOiJzdGF0dXMiLCJ0eXBlIjoibG9uZ0FycmF5IiwidmFsdWUiOlsiLTMiXX1d&treeId=0)
+
 <details>
 <summary>Скриншоты</summary>
 
@@ -173,7 +183,10 @@ gradle clean test
 
 
 <a id="jira"></a>
-## <a name="Jira"></a>Allure TestOps + Jira интеграция</a> <img alt="Telegram" height="25" src="readme/icons/Jira.svg" width="25"/></a>
+## <a name="Jira"></a>Allure TestOps + Jira интеграция</a> <img alt="TestOps + Jira" height="25" src="readme/icons/Jira.svg" width="25"/></a>  
+
+[Тикет в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1177)  
+
 <details>
 <summary>Скриншот</summary>
 
