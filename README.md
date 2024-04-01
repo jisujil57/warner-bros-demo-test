@@ -164,7 +164,7 @@ gradle clean test
 
 
 <a id="testops"></a>
-## <a name="TestOps"></a>Allure TestOps интеграция</a> <img alt="Telegram" height="25" src="readme/icons/Allure2.svg" width="25"/></a>  
+## <a name="TestOps"></a>Allure TestOps интеграция</a> <img alt="Allure TestOps" height="25" src="readme/icons/Allure2.svg" width="25"/></a>  
 
 [Метрики в Allure TestOps](https://allure.autotests.cloud/project/4153/dashboards)  
 
@@ -183,7 +183,7 @@ gradle clean test
 
 
 <a id="jira"></a>
-## <a name="Jira"></a>Allure TestOps + Jira интеграция</a> <img alt="Telegram" height="25" src="readme/icons/Jira.svg" width="25"/></a>  
+## <a name="Jira"></a>Allure TestOps + Jira интеграция</a> <img alt="TestOps + Jira" height="25" src="readme/icons/Jira.svg" width="25"/></a>  
 
 [Тикет в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1177)  
 
