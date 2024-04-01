@@ -29,8 +29,7 @@ allure {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1'),
-            'org.junit.jupiter:junit-jupiter',
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3',
             'com.github.javafaker:javafaker:1.0.2',
             'com.codeborne:selenide:7.1.0',
             'io.qameta.allure:allure-selenide:2.25.0',

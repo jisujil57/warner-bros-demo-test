@@ -16,7 +16,6 @@ import static configurations.BaseTest.setBaseCookies;
 
 public class HomePage {
     public static String BASE_URL = "https://www.warnerbros.com/";
-
     private final SelenideElement searchButton = $("[data-component='search-button']");
     private final SelenideElement searchInput = $(".search-input");
     private final SelenideElement acceptCookiesButton = $("#onetrust-accept-btn-handler");
