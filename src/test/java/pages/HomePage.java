@@ -15,7 +15,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static configurations.BaseTest.setBaseCookies;
 
 public class HomePage {
-    public static String BASE_URL = "https://www.warnerbros.com/";
     private final SelenideElement searchButton = $("[data-component='search-button']");
     private final SelenideElement searchInput = $(".search-input");
     private final SelenideElement acceptCookiesButton = $("#onetrust-accept-btn-handler");
@@ -24,7 +23,7 @@ public class HomePage {
 
     @Step("Открыть главную страницу")
     public void open() {
-        Selenide.open(BASE_URL);
+        Selenide.open("/");
         setBaseCookies();
     }
 

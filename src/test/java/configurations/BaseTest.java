@@ -15,10 +15,11 @@ import java.util.Map;
 import java.util.Set;
 
 import static configurations.Attach.*;
-import static pages.HomePage.BASE_URL;
+
 
 public class BaseTest {
     public static Set<Cookie> staticCookies;
+    public static String BASE_URL = System.getProperty("baseUrl", "https://www.warnerbros.com");
     public final static String BROWSER_NAME = System.getProperty("browser", "chrome");
     public final static String SELENOID_URL = System.getProperty("selenoidUrl", "https://user1:1234@selenoid.autotests.cloud");
 
@@ -43,7 +44,7 @@ public class BaseTest {
 
     private static void configureWebDriver() {
         Configuration.browser = BROWSER_NAME;
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://www.warnerbros.com");
+        Configuration.baseUrl = BASE_URL;
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browserVersion = System.getProperty("browserVersion", "122.0");
         Configuration.pageLoadStrategy = "eager";
